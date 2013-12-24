@@ -45,6 +45,7 @@
 
 	<?php if(is_home() ):?>
 		<link rel='stylesheet' href='<?php echo bloginfo('template_directory');?>/css/home.css' />
+		<link rel='stylesheet' href='<?php echo bloginfo('template_directory');?>/css/nivo-slider.css' />
 	<?php endif; ?>
 
 	<?php if(is_single() || is_page() || is_archive() || is_search() ):?>
@@ -63,7 +64,15 @@
 
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
-	<?php wp_head(); ?>
+	<?php wp_head(); 
+		if (is_home()) {
+	        wp_register_script('jquery_nivo_slider', get_bloginfo('template_directory').'/js/jquery.nivo.slider.pack.js');
+	        wp_enqueue_script('jquery_nivo_slider');
+	        wp_register_script('banner_load', get_bloginfo('template_directory').'/js/banner_load.js');
+	        wp_enqueue_script('banner_load');
+	    }
+    ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -91,7 +100,10 @@
 				</div><!-- end of #logo -->
 
 				<div id="ad" class="grid_7">
-					&nbsp;
+				<?php 
+					$page = get_page_by_path("top-ads");
+					echo $page->post_content;
+				?>
 				</div><!-- end of #ad -->
 
 				<div id="searching" class="grid_4">
