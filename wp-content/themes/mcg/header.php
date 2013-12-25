@@ -3,9 +3,16 @@
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
+
+	<meta name="title" content="Kệ sắt V" />
+	<meta name="description" content="Kệ sắt V" />
+
+	<meta name="keywords" content="Kệ sắt , kệ sắt đa năng , kệ sách sắt , kệ sắt v lỗ , kệ sắt v lỗ đa năng , bán kệ v lỗ , kệ lắp ráp ,kệ sắt lắp ráp , giá kệ lắp ráp , kệ sắt siêu thị , kệ siêu thị , thép v đa năng , sắt v lỗ đa năng , giá kệ đa năng ,  giá kệ bán hàng , giá thép đa năng , giá thép để hàng ,sắt v lỗ sơn tĩnh điện , bán giá kệ , thép v lỗ đa năng , v lỗ đa năng , tủ lắp ráp , kệ nhà kho , v lỗ ,bán kệ , thép đục lỗ , thanh sắt lỗ , kệ văn phòng ,giá kệ văn phòng , kệ sách thư viện , kệ chứa hàng , kệ hồ sơ , kệ lưu trữ hồ sơ , kệ lưu trữ, kệ tài liệu , sắt v lỗ giá rẻ  , sắt v lỗ 4 x6 ,v lỗ 3x5 ,v lỗ 4 x4 , kệ sắt văn phòng ,kệ nhà kho , kệ trung tải , tủ hồ sơ , tủ hòa phát , kệ hòa phát 
+Cửa sắt , sửa cửa sắt , mẫu cửa , cửa cổng đẹp , cửa kéo sắt , cửa cổng sắt , cửa sắt hộp , cửa sắt 4 cánh , khung cửa sắt ,các mẫu cửa sắt , giá cửa cổng sắt , giá cửa nhà sắt , cửa sắt sơn giả gỗ , cửa sắt kính , cửa sắt giả gỗ , mẫu cửa 4 cánh , làm cửa sắt tphcm , cửa sắt inox , giá cửa , cầu thang sắt , cửa nhôm , cửa nhôm giả gỗ , cổng sắt 2 cánh , giá cửa nhôm , rào sắt ,hàng rào sắt , hàng rào đẹp , nhôm kính , khung nhôm kính , vách ngăn nhôm kính ,nhôm kiếng , sơn cửa sắt , mái nhà , mái tôn , mái che , cột kèo , kèo sắt ,giếng trời , giếng trời đẹp , vách ngăn thạch cao , vách ngăn phòng , vách ngăn nỉ ,vách ngăn nỉ kính ,lan can ban công , mẫu lan can đẹp 
+" />
 	
 	<?php if (is_search()) { ?>
-	   <meta name="robots" content="noindex, nofollow" /> 
+	   <meta name="robots" content="noindex, nofollow " /> 
 	<?php } ?>
 
 	<title>
