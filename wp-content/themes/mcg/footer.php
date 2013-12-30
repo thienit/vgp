@@ -30,13 +30,13 @@
 						?>
 					</div>
 					<div class="menu grid_4">
-						<p>MENU</p>
+						
 						<?php wp_nav_menu(array('menu'=>'Main Menu','depth'=>1,'container'=>'','menu_class'=>''));?>
 						<ul>
 						<?php
-							$contact_page = get_page(CONTACT_PAGE);
-							$contact_permalink = get_site_url() .'/'.$contact_page->post_name;
-							echo '<li><a href="' .$contact_permalink. '">' .$contact_page->post_title. '</a></li>';
+							// $contact_page = get_page(CONTACT_PAGE);
+							// $contact_permalink = get_site_url() .'/'.$contact_page->post_name;
+							// echo '<li><a href="' .$contact_permalink. '">' .$contact_page->post_title. '</a></li>';
 						?>
 						</ul>
 					</div>
