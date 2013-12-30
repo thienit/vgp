@@ -1,18 +1,19 @@
- <aside class="grid_4">
+﻿ <aside class="grid_4">
     <div id="cat" class="widget">
         <h1><?php 
             $url = explode('/',$_SERVER['REQUEST_URI']);
             $term_id;
             $term_name;
-            if($url[2]=='product-category') {
-                $term = get_term_by('slug',$url[3],'product_cat',OBJECT);
-            } else if($url[2]=='category') {
-                $term = get_term_by('slug',$url[3],'category',OBJECT);
-            } else if($url[2]=='product') {
+			$featured_cat = get_term_by('slug','featured','product_cat');
+            if($url[1]=='danh-muc') {
+                $term = get_term_by('slug',$url[2],'product_cat',OBJECT);
+            } else if($url[1]=='category') {
+                $term = get_term_by('slug',$url[2],'category',OBJECT);
+            } else if($url[1]=='product') {
                $cats = get_the_terms( $post->ID, 'product_cat' ) ;
                
                foreach ($cats as $cat) {
-                   if($cat->term_id != FEATURED_PRODUCT_CAT) {
+                   if($cat->term_id != $featured_cat->term_id) {
                         $term = get_term_super_parent($cat->term_id,'product_cat');
                         break;
                    }
@@ -21,7 +22,7 @@
                 $cats = get_the_terms( $post->ID,'category');
 
                 foreach ($cats as $cat) {
-                   if($cat->term_id != FEATURED_PRODUCT_CAT) {
+                   if($cat->term_id != $featured_cat->term_id) {
                         $term = get_term_super_parent($cat->term_id,'category');
                         break;
                    }
