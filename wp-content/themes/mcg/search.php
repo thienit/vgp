@@ -35,7 +35,6 @@
 
 				<div class="folder-title"><h1>Kết quả tìm kiếm</h1></div>
 				<section>
-					<div class="illus" style="background-color:#ffff;"><img src="<?php echo bloginfo('template_directory');?>/images/pagenotfound.png" alt="Page Not Found" /></div>
 					<div class="desc">Rất tiếc! Không tìm thấy tài liệu liên quan tới <?php echo '&quot;'.wp_specialchars($s).'&quot; ';?>
 						<p>&nbsp;</p>
 						<p>&nbsp;</p>
