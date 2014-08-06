@@ -597,7 +597,11 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '') {
 		$term = get_queried_object();
 		if ( $term ) {
 			$tax = get_taxonomy( $term->taxonomy );
-			$title = single_term_title( $tax->labels->name . $t_sep, false );
+			if($term->taxonomy == "product_cat")
+				$title = single_term_title( $t_sep, false );
+			else
+				$title = single_term_title( $tax->labels->name . $t_sep, false );
+			
 		}
 	}
 
